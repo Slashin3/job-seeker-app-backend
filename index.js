@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User", userSchema);
 
 // Routes
-app.post("/api/signup", upload.single("resume"), async (req, res) => {
+app.post("job-seeker-app-1nec.vercel.app", upload.single("resume"), async (req, res) => {
   const { name, email, password } = req.body;
   const resumePath = req.file ? req.file.path : null;
 
